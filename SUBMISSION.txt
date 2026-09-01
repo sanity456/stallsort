@@ -1,0 +1,43 @@
+7. MarketStallMatch
+
+Contribution Date
+09/01/2026
+
+Title
+MarketStallMatch - Owner-Isolated Reclaimable Stall Allocation
+
+Notes / Description
+Built MarketStallMatch, a reusable market layout where validators map vendor descriptions to category and resource masks, then code allocates the lowest-surplus compatible free stall in application order for vendor acceptance. Its distinct GenLayer-native mechanism is vendor profile consensus -> bitmap compatibility -> deterministic least-surplus allocation -> vendor acceptance. Correction applied: Profile validation now binds category/resource masks and digest to the attached canonical profile. Application storage is isolated per organizer-owned market, one wallet has one application identity per market, and withdrawn, dismissed, rejected, or accepted records safely release bounded capacity. The full selected set was checked against both steward findings: substantive leader payloads must bind every derived digest, mask, and state field, while operational registries must be owner-scoped or safely reclaimable. No live collection. Category, resource, stall, vendor, and source-reference data are public caller declarations and are not authenticated. It does not authenticate products, approve vendors, allocate legal space, collect fees, or verify resource and accessibility claims. GenVM lint and strict typecheck pass; 15 direct tests and 1 five-validator GLSim integration test pass. A fresh repository-specific external wallet set was used, with no workspace, other-owner, or cross-repository wallet reuse. The StudioNet workflow finalized successfully in 6 transactions. The deployed source was read back byte-for-byte, the complete deployed schema matched abi.json exactly, and mechanism-specific terminal state was read back. The current release is commit e9d0c44573a191ba206fb244a14bd574eff3c73c; contract source: https://github.com/sanity456/stallsort/blob/e9d0c44573a191ba206fb244a14bd574eff3c73c/contracts/market_stall_match.py. The earlier deployment is superseded, is identified only in the correction manifest, and is not submission evidence.
+
+Release commit
+e9d0c44573a191ba206fb244a14bd574eff3c73c
+
+Evidence 1 Type
+GitHub Repository
+
+Evidence 1 URL
+https://github.com/sanity456/stallsort
+
+Evidence 2 Type
+GitHub File
+
+Evidence 2 URL
+https://github.com/sanity456/stallsort/blob/e9d0c44573a191ba206fb244a14bd574eff3c73c/deployments/studionet.json
+
+Evidence 3 Type
+GenLayer Studio Contract
+
+Evidence 3 URL
+https://studio.genlayer.com/?import-contract=0xbf8422e50567d5658F6ac091FAAbE6f86b409EFd
+
+Evidence 4 Type
+GenLayer Explorer Contract
+
+Evidence 4 URL
+https://explorer-studio.genlayer.com/address/0xbf8422e50567d5658F6ac091FAAbE6f86b409EFd
+
+Evidence 5 Type
+Other
+
+Evidence 5 URL
+https://explorer-studio.genlayer.com/tx/0x1e4a0e80435fbff05dd5131e4e745c0bbbd5e7dfd95f3d5c44dbe8fa897f34a3
