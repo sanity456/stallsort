@@ -1,0 +1,14 @@
+Correction summary for MarketStallMatch
+
+We applied the Boxcomplete result-binding finding and the Baggate registry-isolation finding across the full selected twelve-repository set, including this contract.
+
+What changed in this repository:
+Profile validation now binds category/resource masks and digest to the attached canonical profile. Application storage is isolated per organizer-owned market, one wallet has one application identity per market, and withdrawn, dismissed, rejected, or accepted records safely release bounded capacity.
+
+Release evidence:
+Current StudioNet address: 0xbf8422e50567d5658F6ac091FAAbE6f86b409EFd
+Deployment transaction: 0x1e4a0e80435fbff05dd5131e4e745c0bbbd5e7dfd95f3d5c44dbe8fa897f34a3
+Source SHA-256: 5ebc1c7905b40869259b56ce22e57433f072e9c5de6c140d37edc0895abc71fa
+Superseded address: 0x24aBD4E3BA55681d4163f84A46cbBB1fc86c540e
+
+The current Explorer deployment was read back after deployment and matched the repository source byte-for-byte. Its complete on-chain schema matched abi.json exactly. All recorded transactions finalized with successful execution, and the contract-specific final state was read back from StudioNet. Submission evidence must use only the current address and the commit-pinned deployment manifest; the superseded address is not active evidence.

@@ -1,0 +1,217 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "allocate_next": {
+      "params": [
+        [
+          "market_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "answer_offer": {
+      "params": [
+        [
+          "application_id",
+          "string"
+        ],
+        [
+          "accept",
+          "bool"
+        ],
+        [
+          "note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "apply": {
+      "params": [
+        [
+          "application_key",
+          "string"
+        ],
+        [
+          "market_id",
+          "string"
+        ],
+        [
+          "offer_description",
+          "string"
+        ],
+        [
+          "operating_needs",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "close_market": {
+      "params": [
+        [
+          "market_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "create_market": {
+      "params": [
+        [
+          "market_key",
+          "string"
+        ],
+        [
+          "market_json",
+          "string"
+        ],
+        [
+          "source_reference",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "dismiss_application": {
+      "params": [
+        [
+          "application_id",
+          "string"
+        ],
+        [
+          "note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "get_application": {
+      "params": [
+        [
+          "application_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_application_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_market": {
+      "params": [
+        [
+          "market_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_market_active_application_count": {
+      "params": [
+        [
+          "market_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_stall_application": {
+      "params": [
+        [
+          "market_id",
+          "string"
+        ],
+        [
+          "stall_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "matches_assignment": {
+      "params": [
+        [
+          "application_id",
+          "string"
+        ],
+        [
+          "expected_state",
+          "string"
+        ],
+        [
+          "expected_stall",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "bool"
+    },
+    "screen_application": {
+      "params": [
+        [
+          "application_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "withdraw_application": {
+      "params": [
+        [
+          "application_id",
+          "string"
+        ],
+        [
+          "note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "contract": {
+    "abi_sha256": "a6d0d4f74d40bf5bacb3aa37fab3bd306944bfad9d3e9a5fed61281764f2dbed",
+    "address": "0xbf8422e50567d5658F6ac091FAAbE6f86b409EFd",
+    "deployed_source_sha256": "5ebc1c7905b40869259b56ce22e57433f072e9c5de6c140d37edc0895abc71fa",
+    "deployment_tx": "0x1e4a0e80435fbff05dd5131e4e745c0bbbd5e7dfd95f3d5c44dbe8fa897f34a3",
+    "execution_result": "SUCCESS",
+    "schema_method_count": 14,
+    "schema_readback_exact": true,
+    "source_readback_exact": true,
+    "source_sha256": "5ebc1c7905b40869259b56ce22e57433f072e9c5de6c140d37edc0895abc71fa",
+    "status": "FINALIZED"
+  },
+  "correction_basis": [
+    "leader substantive payload must be independently validated and bound to every derived hash, mask, or state field",
+    "registries and fixed capacity must be owner-scoped or safely reclaimable",
+    "submission evidence must resolve to this exact deployed source and full ABI"
+  ],
+  "network": {
+    "chain_id": 61999,
+    "explorer": "https://explorer-studio.genlayer.com",
+    "name": "studionet",
+    "rpc": "https://studio.genlayer.com/api"
+  },
+  "observed": {
+    "application": {
+      "application_id": "0x38852d62b08c5e4a9da3e9251ab7e1f587fbbe33:SATURDAY:0x495caf21b2236de09d118d0317672185109fb82b",
+      "application_key": "APP-1",
+      "applied_at": "2026-09-01T09:18:17.360659Z",
+      "assigned_stall": "S1",
+      "category_id": "FOOD",
+      "closed_at": "2026-09-01T09:20:30.179199Z",
+      "market_id": "0x38852d62b08c5e4a9da3e9251ab7e1f587fbbe33:SATURDAY",
+      "market_slot": -1,
+      "offer_description": "Prepared packaged pantry food made for this community market.",
+      "operating_needs": "Vendor requests a documented electrical service connection.",
+      "organizer": "0x38852d62B08C5E4a9Da3e9251ab7e1f587fBBe33",
+      "profile_sha256": "sha256:8ce1320094939f6c43f85007b747ce15b1fd747519c74346fa86e863a9be9286",
+      "resource_ids": [
+        "POWER"
+      ],
+      "resource_mask": 1,
+      "schema": "stallsort/application/v2",
+      "state": "ACCEPTED",
+      "vendor": "0x495CAf21b2236De09D118d0317672185109fb82b",
+      "vendor_note": "Vendor accepts this synthetic public stall assignment."
+    },
+    "market_capacity_reclaimed": true,
+    "profile_hash_and_mask_bound": true
+  },
+  "owner": "sanity456",
+  "repository": "stallsort",
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "schema": "genlayer-intelligent-contract-correction/v4",
+  "supersedes": {
+    "address": "0x24aBD4E3BA55681d4163f84A46cbBB1fc86c540e",
+    "reason": "Superseded by the full validator-binding and registry-isolation audit",
+    "source_sha256": "fe99e0ea606117e2a7f84da8608a6aadb10cc25d02940e7cff14bb2e1b1c2a58"
+  },
+  "transactions": {
+    "allocate_next": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x0d2f723c4f44ecc13fae99196e299fe7ad0b1f2a72e0de2ea64f5b1535c46763",
+      "status": "FINALIZED",
+      "tx_hash": "0x0d2f723c4f44ecc13fae99196e299fe7ad0b1f2a72e0de2ea64f5b1535c46763",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "answer_offer": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x9f80fa2f2d413d828f0d34c94c1126377d0204a4dd0bb0e7434b8a459680a95b",
+      "status": "FINALIZED",
+      "tx_hash": "0x9f80fa2f2d413d828f0d34c94c1126377d0204a4dd0bb0e7434b8a459680a95b",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "apply": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x60b271ecb1a936e30d89ea3381a1fd42069b540d1c7e4d1b5d068f02a8e2159e",
+      "status": "FINALIZED",
+      "tx_hash": "0x60b271ecb1a936e30d89ea3381a1fd42069b540d1c7e4d1b5d068f02a8e2159e",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "create_market": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0xf39f07e6d5dd30614a88a8e19f0687f00314d788a84ca99bd7349cd07b0a7c28",
+      "status": "FINALIZED",
+      "tx_hash": "0xf39f07e6d5dd30614a88a8e19f0687f00314d788a84ca99bd7349cd07b0a7c28",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "IDLE"
+      ],
+      "verified": true
+    },
+    "deploy": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x1e4a0e80435fbff05dd5131e4e745c0bbbd5e7dfd95f3d5c44dbe8fa897f34a3",
+      "status": "FINALIZED",
+      "tx_hash": "0x1e4a0e80435fbff05dd5131e4e745c0bbbd5e7dfd95f3d5c44dbe8fa897f34a3",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "screen_application": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0xcdb4a48446886797d211da6d6c1df50ce99370e28d92aa89c594f638bea3fd5c",
+      "status": "FINALIZED",
+      "tx_hash": "0xcdb4a48446886797d211da6d6c1df50ce99370e28d92aa89c594f638bea3fd5c",
+      "validator_votes": [
+        "IDLE",
+        "IDLE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    }
+  },
+  "verification": {
+    "all_executions_succeeded": true,
+    "all_transactions_finalized": true,
+    "deployed_schema_exact": true,
+    "deployed_source_exact": true,
+    "latest_final_state_readback": true,
+    "leader_payload_injection_tests_passed": true,
+    "local_direct_test_count": 15,
+    "local_five_validator_test_count": 1,
+    "post_consensus_boundary_tests_passed": true,
+    "registry_isolation_tests_passed": true,
+    "synthetic_public_fixture": true
+  },
+  "verified_at": "2026-09-01T09:21:25.826392Z",
+  "wallet": {
+    "cross_repository_wallet_reused": false,
+    "external_encrypted_keystores": true,
+    "fresh_per_repository": true,
+    "other_owner_wallet_reused": false,
+    "owner": "sanity456",
+    "prior_address_overlap_count": 0,
+    "private_material_in_repository": false,
+    "repository": "stallsort",
+    "roles": {
+      "deployer": "0x38852d62B08C5E4a9Da3e9251ab7e1f587fBBe33",
+      "role_a": "0x495CAf21b2236De09D118d0317672185109fb82b",
+      "role_b": "0xe07f68A820e2D6f165d779672c217C77C2612c50",
+      "role_c": "0xc9Ce7224e09C0aFC27C6e27712e9f89dBd847D29"
+    },
+    "workspace_wallet_used": false
+  }
+}
